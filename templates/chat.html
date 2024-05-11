@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>chat with NOIR-0</title>
+  <link rel="stylesheet" href="{{url_for('static',filename='css/cha_style.css')}}">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="{{url_for('static',filename='js/chat.js')}}"></script>
+</head>
+<body>
+
+    <div class="navbar">
+        <a href="/">Home</a>
+        <a href="/aboutfuture">About</a>
+        <a href="/testchat">Chat</a>
+    </div>
+  <div class="chat-container" id="chat-container">
+    <h2>Ask any thing to NOIR-0 AI assistent</h2>
+  </div>
+  <input type="text" id="user-input"  placeholder="Type your message..." >
+  
+  <button onclick="sendMessage()">Send</button>
+  <button onclick="location.href='index.html'"> Back </button>
+
+  <input type="file" accept="image/*" id="image-upload" style="display:none">
+  <input type="file" accept="audio/*" id="audio-upload" style="display:none">
+  <input type="file" accept="video/*" id="video-upload" style="display:none">
+ 
+  <button onclick="document.getElementById('image-upload').click()">Upload Image</button>
+  <button onclick="document.getElementById('audio-upload').click()">Upload Audio</button>
+  <button onclick="document.getElementById('video-upload').click()">Upload Video</button>
+
+ 
+
+ 
+</body>
+</html>
